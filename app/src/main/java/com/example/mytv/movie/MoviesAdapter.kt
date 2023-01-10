@@ -1,4 +1,4 @@
-package com.example.mytv
+package com.example.mytv.movie
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +7,7 @@ import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CenterCrop
+import com.example.mytv.R
 
 class MoviesAdapter(
     private var movies: MutableList<Movie>,

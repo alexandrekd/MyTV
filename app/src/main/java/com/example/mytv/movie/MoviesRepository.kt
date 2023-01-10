@@ -1,6 +1,7 @@
-package com.example.mytv
+package com.example.mytv.movie
 
 import android.util.Log
+import com.example.mytv.Api
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
