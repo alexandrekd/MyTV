@@ -79,8 +79,8 @@ class ProfilPage : AppCompatActivity() {
         for (i in 0..movies-1){
             var data : String = sharedPreferences.getString(i.toString(),null)!!
 
-            var tempMovie : Movie = Gson().fromJson(data, Movie::class.java)
-            objectListTv.add(tempMovie)
+            var tempTv : Movie = Gson().fromJson(data, Movie::class.java)
+            objectListTv.add(tempTv)
         }
 
 
@@ -107,9 +107,10 @@ class ProfilPage : AppCompatActivity() {
         for (i in 0..tvs-1){
             var data : String = sharedPreferences.getString(i.toString(),null)!!
 
-            var tempTv : Movie = Gson().fromJson(data, Movie::class.java)
-            objectListTv.add(tempTv)
+            var tempMovie : Movie = Gson().fromJson(data, Movie::class.java)
+            objectListMovie.add(tempMovie)
         }
+
 
 
         onPopularMoviesFetched(objectListMovie)

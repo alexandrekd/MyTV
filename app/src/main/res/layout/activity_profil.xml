@@ -44,7 +44,7 @@
         android:layout_above="@+id/see_tv"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="1dp"
-        android:text="Vos films" />
+        android:text="Vos séries" />
 
     <TextView
         android:id="@+id/textView2"
@@ -53,6 +53,6 @@
         android:layout_above="@+id/see_movie"
         android:layout_marginBottom="1dp"
         android:layout_centerHorizontal="true"
-        android:text="Vos séries" />
+        android:text="Vos films" />
 
 </RelativeLayout>
