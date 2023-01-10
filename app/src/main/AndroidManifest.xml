@@ -15,6 +15,13 @@
         android:theme="@style/Theme.MyTV"
         tools:targetApi="31">
         <activity
+            android:name=".search.SearchPage"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".tv.TvDetailsActivity"
             android:exported="false">
             <meta-data

@@ -1,6 +1,7 @@
 package com.example.mytv
 
 import com.example.mytv.movie.GetMoviesResponse
+import com.example.mytv.search.GetSearchResponse
 import com.example.mytv.tv.GetTvResponse
 import retrofit2.Call
 import retrofit2.http.GET
@@ -37,5 +38,10 @@ interface Api {
         @Query("page") page: Int
     ): Call<GetTvResponse>
 
-
+    @GET("search/movie")
+    fun getSearch(
+        @Query("api_key") apiKey: String = "9ebb909aaf76048c85007618c28b505f",
+        @Query("page") page: Int,
+        @Query("query") query: String
+    ): Call<GetSearchResponse>
 }

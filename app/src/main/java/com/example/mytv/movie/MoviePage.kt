@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mytv.R
+import com.example.mytv.search.SearchPage
 import com.example.mytv.tv.TvPage
 import com.google.android.material.navigation.NavigationBarView
 
@@ -88,7 +89,8 @@ class MoviePage : AppCompatActivity() {
                     startActivity(object_a)
                     true}
                 R.id.search -> {
-                    Log.d("Bottom bar : ", "Search")
+                    val object_a = Intent(ActivityA@this, SearchPage::class.java)
+                    startActivity(object_a)
                     true}
                 else -> {
                     Log.d("Bottom bar : ", "Else")
