@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mytv.R
 import com.example.mytv.movie.*
+import com.example.mytv.profil.ProfilPage
 import com.example.mytv.tv.TvPage
 import com.google.android.material.navigation.NavigationBarView
 import kotlin.math.log
@@ -45,30 +46,26 @@ class SearchPage : AppCompatActivity() {
 
         navBar.setOnItemSelectedListener {
 
-            when (it.itemId) {
+            when (it.itemId){
                 R.id.profil -> {
-                    Log.d("Bottom bar : ", "Profil")
-                    true
-                }
+                    val object_a = Intent(ActivityA@this, ProfilPage::class.java)
+                    startActivity(object_a)
+                    true}
                 R.id.movie -> {
-                    val object_a = Intent(ActivityA@ this, MoviePage::class.java)
+                    val object_a = Intent(ActivityA@this, MoviePage::class.java)
                     startActivity(object_a)
-                    true
-                }
-                R.id.tv -> {
-                    val object_a = Intent(ActivityA@ this, TvPage::class.java)
+                    true}
+                R.id.tv -> {val object_a = Intent(ActivityA@this, TvPage::class.java)
                     startActivity(object_a)
-                    true
-                }
+                    true}
                 R.id.search -> {
-                    val object_a = Intent(ActivityA@ this, SearchPage::class.java)
+                    val object_a = Intent(ActivityA@this, SearchPage::class.java)
                     startActivity(object_a)
-                    true
-                }
+                    true}
                 else -> {
                     Log.d("Bottom bar : ", "Else")
-                    false
-                }
+                    false}
+
             }
         }
 

@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mytv.R
+import com.example.mytv.profil.ProfilPage
 import com.example.mytv.search.SearchPage
 import com.example.mytv.tv.TvPage
 import com.google.android.material.navigation.NavigationBarView
@@ -79,7 +80,8 @@ class MoviePage : AppCompatActivity() {
 
             when (it.itemId){
                 R.id.profil -> {
-                    Log.d("Bottom bar : ", "Profil")
+                    val object_a = Intent(ActivityA@this, ProfilPage::class.java)
+                    startActivity(object_a)
                     true}
                 R.id.movie -> {
                     val object_a = Intent(ActivityA@this, MoviePage::class.java)

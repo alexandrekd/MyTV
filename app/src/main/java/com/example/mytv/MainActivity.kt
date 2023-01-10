@@ -1,16 +1,21 @@
 package com.example.mytv
 
+import android.annotation.SuppressLint
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.example.mytv.movie.MoviePage
 
 class MainActivity : AppCompatActivity() {
 
 
+    private lateinit var sharedPreferences: SharedPreferences
 
 
 
+    @SuppressLint("CommitPrefEdits")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -18,6 +23,14 @@ class MainActivity : AppCompatActivity() {
 
         val object_a = Intent(ActivityA@this, MoviePage::class.java)
         startActivity(object_a)
+
+
+        sharedPreferences = getSharedPreferences("MyFavMovie",0)
+        sharedPreferences.edit().putString("value", "0").apply()
+
+        sharedPreferences = getSharedPreferences("MyFavTv",0)
+        sharedPreferences.edit().putString("value", "0").apply()
+
 
 
 

@@ -10,4 +10,7 @@
     <color name="colorPrimary">#212121</color>
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#FF5252</color>
+    <color name="noLike">#808080</color>
+    <color name="like">#FF0000</color>
 </resources>
+

@@ -82,5 +82,30 @@
             app:layout_constraintEnd_toEndOf="@+id/tv_poster_card"
             app:layout_constraintStart_toStartOf="@+id/tv_poster_card"
             app:layout_constraintTop_toBottomOf="@+id/tv_poster_card" />
+
+        <Button
+            android:id="@+id/button_vu"
+            android:layout_width="56dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/button_background_color"
+            android:text="Vu"
+            app:layout_constraintBottom_toTopOf="@+id/tv_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:strokeColor="#22FFFFFF" />
+
+        <Button
+            android:id="@+id/button_share"
+            android:layout_width="133dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#1844e6"
+            android:text="Partage"
+            android:onClick="partage"
+            app:layout_constraintBottom_toTopOf="@+id/tv_title"
+            app:layout_constraintEnd_toStartOf="@+id/button_vu"
+            app:strokeColor="#1844e6" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
